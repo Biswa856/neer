@@ -26,6 +26,24 @@ Route::group(['guest'], function () {
         ]);
     });
 
+    Route::get('/post', function () {
+        return Inertia::render('Post', [
+            'name' => 'login'
+        ]);
+    });
+
+    Route::get('/card', function () {
+        return Inertia::render('PostCard', [
+            'name' => 'login'
+        ]);
+    });
+
+    Route::get('/feed', function () {
+        return Inertia::render('ArtistPost', [
+            'name' => 'login'
+        ]);
+    });
+
     Route::get('/signup', function () {
         return Inertia::render('Authentication', [
             'name' => 'signup'

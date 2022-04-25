@@ -5,6 +5,7 @@ import Login from '../components/auth/Login';
 import Signup from '../components/auth/Signup';
 import ForgotPassword from '../components/auth/ForgotPassword';
 
+
 function Authentication({name}) {
     var render = <Login/>;
     switch (name) {
@@ -16,6 +17,7 @@ function Authentication({name}) {
             break;
         default:
             render = <ForgotPassword/>
+           
             break;
     }
     return (
